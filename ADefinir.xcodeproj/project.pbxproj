@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F05B5451E094241006E2779 /* DesabafoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05B5441E094241006E2779 /* DesabafoDAO.swift */; };
+		3F05B5471E094452006E2779 /* Desabafo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05B5461E094452006E2779 /* Desabafo.swift */; };
+		3F05B5491E09450F006E2779 /* Comentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05B5481E09450F006E2779 /* Comentario.swift */; };
+		3F05B54B1E0946A8006E2779 /* CadastroDesabafoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05B54A1E0946A8006E2779 /* CadastroDesabafoViewController.swift */; };
 		3FFF5A7E1E07EE0D002AF99A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF5A7D1E07EE0D002AF99A /* AppDelegate.swift */; };
 		3FFF5A801E07EE0D002AF99A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF5A7F1E07EE0D002AF99A /* ViewController.swift */; };
 		3FFF5A831E07EE0D002AF99A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFF5A811E07EE0D002AF99A /* Main.storyboard */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F05B5441E094241006E2779 /* DesabafoDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesabafoDAO.swift; sourceTree = "<group>"; };
+		3F05B5461E094452006E2779 /* Desabafo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Desabafo.swift; sourceTree = "<group>"; };
+		3F05B5481E09450F006E2779 /* Comentario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comentario.swift; sourceTree = "<group>"; };
+		3F05B54A1E0946A8006E2779 /* CadastroDesabafoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroDesabafoViewController.swift; sourceTree = "<group>"; };
 		3FFF5A7A1E07EE0D002AF99A /* ADefinir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADefinir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFF5A7D1E07EE0D002AF99A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FFF5A7F1E07EE0D002AF99A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +80,10 @@
 				3FFF5A891E07EE0D002AF99A /* LaunchScreen.storyboard */,
 				3FFF5A8C1E07EE0D002AF99A /* Info.plist */,
 				3FFF5A841E07EE0D002AF99A /* ADefinir.xcdatamodeld */,
+				3F05B5441E094241006E2779 /* DesabafoDAO.swift */,
+				3F05B5461E094452006E2779 /* Desabafo.swift */,
+				3F05B5481E09450F006E2779 /* Comentario.swift */,
+				3F05B54A1E0946A8006E2779 /* CadastroDesabafoViewController.swift */,
 			);
 			path = ADefinir;
 			sourceTree = "<group>";
@@ -150,8 +162,12 @@
 				3FFF5A981E0804B1002AF99A /* PerfilViewController.swift in Sources */,
 				3FFF5A801E07EE0D002AF99A /* ViewController.swift in Sources */,
 				3FFF5A861E07EE0D002AF99A /* ADefinir.xcdatamodeld in Sources */,
+				3F05B5491E09450F006E2779 /* Comentario.swift in Sources */,
+				3F05B54B1E0946A8006E2779 /* CadastroDesabafoViewController.swift in Sources */,
+				3F05B5451E094241006E2779 /* DesabafoDAO.swift in Sources */,
 				3FFF5A7E1E07EE0D002AF99A /* AppDelegate.swift in Sources */,
 				3FFF5A931E07F975002AF99A /* HomeViewController.swift in Sources */,
+				3F05B5471E094452006E2779 /* Desabafo.swift in Sources */,
 				3FFF5A951E0802A5002AF99A /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +320,7 @@
 				3FFF5A911E07EE0D002AF99A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

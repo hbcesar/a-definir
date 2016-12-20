@@ -42,6 +42,9 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="106" y="62" width="134" height="21"/>
+                                                </variation>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="fF8-1x-Nx4">
                                                 <rect key="frame" x="0.0" y="95" width="544" height="44"/>
@@ -51,14 +54,23 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="widthClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="344" height="21"/>
+                                                        </variation>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMY-xn-oZn">
                                                         <rect key="frame" x="0.0" y="24" width="544" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="widthClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="24" width="344" height="21"/>
+                                                        </variation>
                                                     </label>
                                                 </subviews>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="95" width="344" height="44"/>
+                                                </variation>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="zTs-A2-goa">
                                                 <rect key="frame" x="0.0" y="151" width="544" height="44"/>
@@ -68,14 +80,23 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="widthClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="344" height="21"/>
+                                                        </variation>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msr-oc-a9n">
                                                         <rect key="frame" x="0.0" y="24" width="544" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="widthClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="24" width="344" height="21"/>
+                                                        </variation>
                                                     </label>
                                                 </subviews>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="151" width="344" height="44"/>
+                                                </variation>
                                             </stackView>
                                         </subviews>
                                         <constraints>
@@ -84,6 +105,9 @@
                                             <constraint firstAttribute="trailing" secondItem="zTs-A2-goa" secondAttribute="trailing" id="r5t-rp-T9M"/>
                                             <constraint firstItem="fF8-1x-Nx4" firstAttribute="leading" secondItem="U5l-Nz-Bq7" secondAttribute="leading" id="zcD-52-KLo"/>
                                         </constraints>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="8" y="8" width="344" height="195"/>
+                                        </variation>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -92,6 +116,9 @@
                                     <constraint firstItem="U5l-Nz-Bq7" firstAttribute="leading" secondItem="sny-12-wIK" secondAttribute="leading" constant="8" id="esj-Ed-82S"/>
                                     <constraint firstAttribute="trailing" secondItem="U5l-Nz-Bq7" secondAttribute="trailing" constant="8" id="kUj-Fw-kLK"/>
                                 </constraints>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="20" y="84" width="360" height="212"/>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
@@ -113,7 +140,7 @@
         <!--Desabafar Scene-->
         <scene sceneID="d9o-p0-BMT">
             <objects>
-                <viewController id="vkW-KO-fTW" userLabel="Desabafar Scene" sceneMemberID="viewController">
+                <viewController id="vkW-KO-fTW" userLabel="Desabafar Scene" customClass="CadastroDesabafoViewController" customModule="ADefinir" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IJg-Fi-j7a"/>
                         <viewControllerLayoutGuide type="bottom" id="hER-w7-qwb"/>
@@ -155,17 +182,26 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="21"/>
+                                                </variation>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rNx-w5-tai">
                                                 <rect key="frame" x="88" y="0.0" width="472" height="128"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="88" y="0.0" width="272" height="50"/>
+                                                </variation>
                                             </textView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="rNx-w5-tai" secondAttribute="trailing" id="Ew1-Cd-A5Z"/>
                                         </constraints>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="38" width="360" height="50"/>
+                                        </variation>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpd-30-uWn">
                                         <rect key="frame" x="0.0" y="174" width="560" height="30"/>
@@ -173,8 +209,17 @@
                                         <state key="normal" title="Desabafar!">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="96" width="360" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="desabafar:" destination="vkW-KO-fTW" eventType="touchUpInside" id="ez6-4t-Kqu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="84" width="360" height="126"/>
+                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -185,6 +230,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Desabafar" image="chat-icon" id="S2b-55-Xsv"/>
+                    <connections>
+                        <outlet property="DesabafoLabel" destination="rNx-w5-tai" id="fgQ-Ta-LbL"/>
+                        <outlet property="tituloLabel" destination="WxJ-4D-lJA" id="KAx-g0-KPa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k7U-Xn-XTI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -291,6 +340,9 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="S3N-F9-Y0c"/>
                                                 </constraints>
+                                                <variation key="widthClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="344" height="200"/>
+                                                </variation>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Título do Desabafo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLI-cq-jba">
                                                 <rect key="frame" x="0.0" y="208" width="544" height="21"/>
@@ -300,14 +352,23 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="208" width="344" height="21"/>
+                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Texto resumido do desabafo com algumas linhas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jh7-Ql-cqx">
                                                 <rect key="frame" x="0.0" y="237" width="544" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="237" width="344" height="21"/>
+                                                </variation>
                                             </label>
                                         </subviews>
+                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="8" y="8" width="344" height="258"/>
+                                        </variation>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
