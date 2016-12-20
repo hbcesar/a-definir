@@ -78,6 +78,10 @@
 				3FFF5A891E07EE0D002AF99A /* LaunchScreen.storyboard */,
 				3FFF5A8C1E07EE0D002AF99A /* Info.plist */,
 				3FFF5A841E07EE0D002AF99A /* ADefinir.xcdatamodeld */,
+				3F05B5441E094241006E2779 /* DesabafoDAO.swift */,
+				3F05B5461E094452006E2779 /* Desabafo.swift */,
+				3F05B5481E09450F006E2779 /* Comentario.swift */,
+				3F05B54A1E0946A8006E2779 /* CadastroDesabafoViewController.swift */,
 			);
 			path = ADefinir;
 			sourceTree = "<group>";
@@ -157,9 +161,13 @@
 				3FFF5A801E07EE0D002AF99A /* ViewController.swift in Sources */,
 				3F8330FA1E094942004E6824 /* ComentariosTableViewController.swift in Sources */,
 				3FFF5A861E07EE0D002AF99A /* ADefinir.xcdatamodeld in Sources */,
+				3F05B5491E09450F006E2779 /* Comentario.swift in Sources */,
+				3F05B54B1E0946A8006E2779 /* CadastroDesabafoViewController.swift in Sources */,
+				3F05B5451E094241006E2779 /* DesabafoDAO.swift in Sources */,
 				3FFF5A7E1E07EE0D002AF99A /* AppDelegate.swift in Sources */,
 				3F8330F81E0946C0004E6824 /* DesabafoDetailsViewController.swift in Sources */,
 				3FFF5A931E07F975002AF99A /* HomeViewController.swift in Sources */,
+				3F05B5471E094452006E2779 /* Desabafo.swift in Sources */,
 				3FFF5A951E0802A5002AF99A /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
