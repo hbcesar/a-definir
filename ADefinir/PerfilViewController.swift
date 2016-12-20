@@ -9,9 +9,9 @@
 import UIKit
 
 class PerfilViewController: UIViewController {
-
-    @IBOutlet weak var perfilCard: UIView!
     
+    @IBOutlet weak var perfilCard: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

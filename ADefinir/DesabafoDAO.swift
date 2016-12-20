@@ -20,7 +20,7 @@ class DesabafoDAO {
         //inserir comentario para um certo desabafo
     }
     
-    static func buscarTodos() -> [Desabafo] {
-        //retornar lista de todos os desabafos
-    }
+//    static func buscarTodos() -> [Desabafo] {
+//        //retornar lista de todos os desabafos
+//    }
 }

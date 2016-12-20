@@ -11,6 +11,11 @@ import UIKit
 class DesabafoDetailsViewController: UIViewController {
 
     @IBOutlet weak var mainCard: CardView!
+    @IBOutlet weak var desabafoImagem: CardView!
+    @IBOutlet weak var desabafoTitulo: UILabel!
+    @IBOutlet weak var desabafoConteudo: UITextView!
+    @IBOutlet weak var desabafoComentarios: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
