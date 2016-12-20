@@ -10,7 +10,8 @@ import UIKit
 
 class CadastroDesabafoViewController: UIViewController {
     @IBOutlet weak var tituloLabel: UITextField!
-    @IBOutlet weak var DesabafoLabel: UITextView!
+    @IBOutlet weak var desabafoLabel: UITextView!
+    
     
     // objeto "Filme" que manipularemos nas operações
     var desabafo: Desabafo?
@@ -18,15 +19,13 @@ class CadastroDesabafoViewController: UIViewController {
     // array de "Filme" que utilizaremos nas operações
     //var listaDesabafo: [Desabafo]?
 
-    
     @IBAction func desabafar(sender: AnyObject) {
         // inicializando o objeto, para que ele seja preparado para receber valores
         self.desabafo = Desabafo()
         self.desabafo?.titulo = self.tituloLabel.text
-        self.desabafo?.descricao = self.DesabafoLabel.text
+        self.desabafo?.descricao = self.desabafoLabel.text
         
         // chamada do método de inserir, que está no "M" (model) do MVC
         DesabafoDAO.inserir(self.desabafo!)
     }
-
 }

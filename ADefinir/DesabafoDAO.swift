@@ -13,6 +13,10 @@ import UIKit
 class DesabafoDAO {
     static func inserir(desabafo: Desabafo) {
         //inserir um desabafo no BD
+        print("Inserindo desabafo..")
+        print(desabafo.titulo)
+        print(desabafo.descricao)
+        print("Pseudo inserido com sucesso")
         
     }
     
@@ -20,7 +24,8 @@ class DesabafoDAO {
         //inserir comentario para um certo desabafo
     }
     
-    static func buscarTodos() -> [Desabafo] {
-        //retornar lista de todos os desabafos
-    }
+//    static func buscarTodos() -> [Desabafo] {
+//        //retornar lista de todos os desabafos
+//        return nil
+//    }
 }
