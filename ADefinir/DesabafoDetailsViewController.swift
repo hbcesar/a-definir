@@ -1,24 +1,29 @@
 //
-//  PerfilViewController.swift
+//  DesabafoDetailsViewController.swift
 //  ADefinir
 //
-//  Created by Student on 12/19/16.
+//  Created by Student on 12/20/16.
 //  Copyright © 2016 LuizMai & CesarBernabe. All rights reserved.
 //
 
 import UIKit
 
-class PerfilViewController: UIViewController {
-    
-    @IBOutlet weak var perfilCard: UIView!
+class DesabafoDetailsViewController: UIViewController {
 
+    @IBOutlet weak var mainCard: CardView!
+    @IBOutlet weak var desabafoImagem: CardView!
+    @IBOutlet weak var desabafoTitulo: UILabel!
+    @IBOutlet weak var desabafoConteudo: UITextView!
+    @IBOutlet weak var desabafoComentarios: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.perfilCard.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3).CGColor
-        self.perfilCard.layer.shadowOffset = CGSizeMake(3.0, 3.0)
-        self.perfilCard.layer.shadowOpacity = 1.0
-        self.perfilCard.layer.shadowRadius = 1.0
+        self.mainCard.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3).CGColor
+        self.mainCard.layer.shadowOffset = CGSizeMake(3.0, 3.0)
+        self.mainCard.layer.shadowOpacity = 1.0
+        self.mainCard.layer.shadowRadius = 1.0
 
         // Do any additional setup after loading the view.
     }
