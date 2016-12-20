@@ -18,7 +18,7 @@ class PerfilViewController: UIViewController {
         self.perfilCard.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3).CGColor
         self.perfilCard.layer.shadowOffset = CGSizeMake(3.0, 3.0)
         self.perfilCard.layer.shadowOpacity = 1.0
-        self.perfilCard.layer.shadowRadius = 0.0
+        self.perfilCard.layer.shadowRadius = 1.0
 
         // Do any additional setup after loading the view.
     }

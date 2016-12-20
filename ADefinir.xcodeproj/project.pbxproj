@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F8330F81E0946C0004E6824 /* DesabafoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8330F71E0946C0004E6824 /* DesabafoDetailsViewController.swift */; };
+		3F8330FA1E094942004E6824 /* ComentariosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8330F91E094942004E6824 /* ComentariosTableViewController.swift */; };
 		3FFF5A7E1E07EE0D002AF99A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF5A7D1E07EE0D002AF99A /* AppDelegate.swift */; };
 		3FFF5A801E07EE0D002AF99A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF5A7F1E07EE0D002AF99A /* ViewController.swift */; };
 		3FFF5A831E07EE0D002AF99A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFF5A811E07EE0D002AF99A /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F8330F71E0946C0004E6824 /* DesabafoDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesabafoDetailsViewController.swift; sourceTree = "<group>"; };
+		3F8330F91E094942004E6824 /* ComentariosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComentariosTableViewController.swift; sourceTree = "<group>"; };
 		3FFF5A7A1E07EE0D002AF99A /* ADefinir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADefinir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFF5A7D1E07EE0D002AF99A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FFF5A7F1E07EE0D002AF99A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,9 +69,11 @@
 				3FFF5A7D1E07EE0D002AF99A /* AppDelegate.swift */,
 				3FFF5A7F1E07EE0D002AF99A /* ViewController.swift */,
 				3FFF5A811E07EE0D002AF99A /* Main.storyboard */,
+				3F8330F91E094942004E6824 /* ComentariosTableViewController.swift */,
 				3FFF5A941E0802A5002AF99A /* CardView.swift */,
 				3FFF5A971E0804B1002AF99A /* PerfilViewController.swift */,
 				3FFF5A921E07F975002AF99A /* HomeViewController.swift */,
+				3F8330F71E0946C0004E6824 /* DesabafoDetailsViewController.swift */,
 				3FFF5A871E07EE0D002AF99A /* Assets.xcassets */,
 				3FFF5A891E07EE0D002AF99A /* LaunchScreen.storyboard */,
 				3FFF5A8C1E07EE0D002AF99A /* Info.plist */,
@@ -149,8 +155,10 @@
 			files = (
 				3FFF5A981E0804B1002AF99A /* PerfilViewController.swift in Sources */,
 				3FFF5A801E07EE0D002AF99A /* ViewController.swift in Sources */,
+				3F8330FA1E094942004E6824 /* ComentariosTableViewController.swift in Sources */,
 				3FFF5A861E07EE0D002AF99A /* ADefinir.xcdatamodeld in Sources */,
 				3FFF5A7E1E07EE0D002AF99A /* AppDelegate.swift in Sources */,
+				3F8330F81E0946C0004E6824 /* DesabafoDetailsViewController.swift in Sources */,
 				3FFF5A931E07F975002AF99A /* HomeViewController.swift in Sources */,
 				3FFF5A951E0802A5002AF99A /* CardView.swift in Sources */,
 			);
@@ -304,6 +312,7 @@
 				3FFF5A911E07EE0D002AF99A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
