@@ -47,8 +47,9 @@ class HomeViewController: UIViewController {
         cardDescriptionLabel.text = "-"
         
         self.mainCard.addSubview(activityIndicator)
-                activityIndicator.frame = self.mainCard.bounds
-                activityIndicator.startAnimating()
+        activityIndicator.center = mainCard.center
+        activityIndicator.frame = self.mainCard.bounds
+        activityIndicator.startAnimating()
         
         populate()
         viewAnimation()

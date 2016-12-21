@@ -21,7 +21,6 @@ class DesabafoDetailsViewController: UIViewController, UITableViewDelegate, UITa
     
     let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,6 +36,7 @@ class DesabafoDetailsViewController: UIViewController, UITableViewDelegate, UITa
         tableView.dataSource = self
         
         // Do any additional setup after loading the view.
+        activityIndicator.center = tableView.center
         self.mainCard.addSubview(activityIndicator)
         activityIndicator.frame = self.mainCard.bounds
         activityIndicator.startAnimating()
