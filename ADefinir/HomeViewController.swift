@@ -80,11 +80,11 @@ class HomeViewController: UIViewController {
                 var desabafos = [Desabafo]()
                 
                 for json in jsonArray {
-                    //let id = json["id"] as? Int
+                    let id = json["id"] as? String
                     let titulo = json["titulo"] as? String
                     let conteudo = json["conteudo"] as? String
                     
-                    desabafos.append(Desabafo(id: 0, titulo: titulo!,
+                    desabafos.append(Desabafo(id: Int(id!)!, titulo: titulo!,
                         descricao: conteudo!))
                 }
             
