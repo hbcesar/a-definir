@@ -20,4 +20,18 @@ class Desabafo {
     func inserirComentario(comentario: Comentario) {
         self.comentarios?.append(comentario)
     }
+    
+    init(id: Int, titulo: String, descricao: String){
+        self.id = id
+        self.titulo = titulo
+        self.descricao = descricao
+    }
+    
+    init(titulo: String, descricao: String){
+        self.id = 0
+        self.titulo = titulo
+        self.descricao = descricao
+    }
+    
+
 }
