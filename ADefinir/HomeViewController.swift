@@ -12,6 +12,11 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var mainCard: UIView!
     
+    let frontView = UIView()
+    let backView = UIView()
+    
+    private var showingBack = false
+    
     var listaDesabafos = [Desabafo]()
     
     // Card Outlets
@@ -33,6 +38,8 @@ class HomeViewController: UIViewController {
         
         cardTitleLabel.text = desabafo.titulo
         cardDescriptionLabel.text = desabafo.descricao
+        
+        viewAnimation()
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,6 +53,26 @@ class HomeViewController: UIViewController {
         desabafo.descricao = "Oi eu queria ser rolezeira pra fecha com os boy mas minha mãe não deixa"
         
         return desabafo
+    }
+    
+    func viewAnimation(){
+        mainCard.addSubview(backView)
+        mainCard.addSubview(frontView)
+        
+        let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(flip))
+        swipeGesture.direction = UISwipeGestureRecognizerDirection.Up
+        mainCard.addGestureRecognizer(swipeGesture)
+    }
+    
+    func flip() {
+        let toView = showingBack ? frontView : backView
+        let fromView = showingBack ? backView : frontView
+        UIView.transitionFromView(fromView, toView: toView, duration: 1, options: .TransitionCurlUp, completion: nil)
+        
+        //Mudar contents da view
+        
+        
+        showingBack = !showingBack
     }
     
 }
