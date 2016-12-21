@@ -17,7 +17,9 @@ class DesabafoDetailsViewController: UIViewController, UITableViewDelegate, UITa
     @IBOutlet weak var desabafoTitulo: UILabel!
     @IBOutlet weak var desabafoConteudo: UITextView!
     
-    let comentarios = [Comentario]()
+    var comentarios = [Comentario]()
+    
+    let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
     
     
     override func viewDidLoad() {
@@ -35,7 +37,49 @@ class DesabafoDetailsViewController: UIViewController, UITableViewDelegate, UITa
         tableView.dataSource = self
         
         // Do any additional setup after loading the view.
+        self.mainCard.addSubview(activityIndicator)
+        activityIndicator.frame = self.mainCard.bounds
+        activityIndicator.startAnimating()
+        populate()
     }
+    
+    func populate(){
+        let url = NSURL(string: "http://luizmai.com.br/comentario.php")
+        typealias JSON = [String:AnyObject]
+        var jsonArray: [JSON]!
+        
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
+            do {
+                jsonArray = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions()) as? [JSON]
+                
+                var comentarios = [Comentario]()
+                
+                for json in jsonArray {
+                    let autor = json["autor"] as? String
+                    let comentario = json["conteudo"] as? String
+                    
+                    let c = Comentario()
+                    c.autor = autor
+                    c.comentario = comentario
+                    
+                    comentarios.append(c)
+                }
+                
+                self.activityIndicator.removeFromSuperview()
+                
+                self.comentarios = comentarios
+                print(comentarios)
+                self.tableView.reloadData()
+                
+            } catch {
+                print(error)
+            }
+            
+        }
+        
+        task.resume()
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -47,16 +91,15 @@ class DesabafoDetailsViewController: UIViewController, UITableViewDelegate, UITa
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return comentarios.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "comentarioIdentifier")
 
-
         
-        cell.textLabel?.text = "Teste"
-        cell.detailTextLabel?.text = "teste teste teste"
+        cell.textLabel?.text = comentarios[indexPath.row].autor
+        cell.detailTextLabel?.text = comentarios[indexPath.row].comentario
         
         return cell
     }
