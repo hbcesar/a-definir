@@ -8,13 +8,16 @@
 
 import UIKit
 
-class DesabafoDetailsViewController: UIViewController {
+class DesabafoDetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet var tableView: UITableView!
+    
     @IBOutlet weak var mainCard: CardView!
     @IBOutlet weak var desabafoImagem: CardView!
     @IBOutlet weak var desabafoTitulo: UILabel!
     @IBOutlet weak var desabafoConteudo: UITextView!
-    @IBOutlet weak var desabafoComentarios: UITableView!
+    
+    let comentarios = [Comentario]()
     
     
     override func viewDidLoad() {
@@ -24,7 +27,13 @@ class DesabafoDetailsViewController: UIViewController {
         self.mainCard.layer.shadowOffset = CGSizeMake(3.0, 3.0)
         self.mainCard.layer.shadowOpacity = 1.0
         self.mainCard.layer.shadowRadius = 1.0
-
+        
+        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "comentarioIdentifier")
+        
+        // This view controller itself will provide the delegate methods and row data for the table view.
+        tableView.delegate = self
+        tableView.dataSource = self
+        
         // Do any additional setup after loading the view.
     }
 
@@ -33,15 +42,23 @@ class DesabafoDetailsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
     }
-    */
+
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "comentarioIdentifier")
+
+
+        
+        cell.textLabel?.text = "Teste"
+        cell.detailTextLabel?.text = "teste teste teste"
+        
+        return cell
+    }
 
 }
