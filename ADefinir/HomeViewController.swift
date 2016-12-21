@@ -70,6 +70,13 @@ class HomeViewController: UIViewController {
         UIView.transitionFromView(fromView, toView: toView, duration: 1, options: .TransitionCurlUp, completion: nil)
         
         //Mudar contents da view
+        let url = NSURL(string: "http://luizmai.com.br/desabafo.php")
+        
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
+            print(NSString(data: data!, encoding: NSUTF8StringEncoding))
+        }
+        
+        task.resume()
         
         
         showingBack = !showingBack
