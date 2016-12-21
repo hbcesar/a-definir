@@ -329,8 +329,7 @@
                                                         <exclude reference="UaB-dw-zLd"/>
                                                     </mask>
                                                 </variation>
-                                                <variation key="widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="88" y="0.0" width="272" height="120"/>
+                                                <variation key="widthClass=compact">
                                                     <mask key="constraints">
                                                         <include reference="UaB-dw-zLd"/>
                                                     </mask>
@@ -363,7 +362,7 @@
                                             <rect key="frame" x="0.0" y="96" width="360" height="30"/>
                                         </variation>
                                         <connections>
-                                            <action selector="desabafar:" destination="vkW-KO-fTW" eventType="touchUpInside" id="zk9-ds-Bjs"/>
+                                            <action selector="criarDesabafo:" destination="vkW-KO-fTW" eventType="touchUpInside" id="0Vq-vt-L9b"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -651,7 +650,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="240" height="66.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gNP-bz-XuI">
+                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gNP-bz-XuI">
                                                                     <rect key="frame" x="-4" y="-4" width="142" height="50"/>
                                                                     <subviews>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TbQ-QL-TzU">

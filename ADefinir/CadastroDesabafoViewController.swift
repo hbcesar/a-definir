@@ -16,16 +16,29 @@ class CadastroDesabafoViewController: UIViewController {
     // objeto "Filme" que manipularemos nas operações
     var desabafo: Desabafo?
     
-    // array de "Filme" que utilizaremos nas operações
-    //var listaDesabafo: [Desabafo]?
-
-    @IBAction func desabafar(sender: AnyObject) {
-        // inicializando o objeto, para que ele seja preparado para receber valores
+    @IBAction func criarDesabafo(sender: UIButton!) {
         self.desabafo = Desabafo()
         self.desabafo?.titulo = self.tituloLabel.text
         self.desabafo?.descricao = self.desabafoLabel.text
         
         // chamada do método de inserir, que está no "M" (model) do MVC
-        DesabafoDAO.inserir(self.desabafo!)
+        
+        let request = NSMutableURLRequest(URL: NSURL(string: "http://luizmai.com.br/desabafo.php")!)
+        request.HTTPMethod = "POST"
+        let postString = "titulo=" + (self.desabafo?.titulo)! +
+            "&conteudo="+(self.desabafo?.descricao)!
+        request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
+            guard error == nil && data != nil else {                                                          // check for fundamental networking error
+                print("error=\(error)")
+                return
+            }
+            
+        }
+        task.resume()
+
     }
+    // array de "Filme" que utilizaremos nas operações
+    //var listaDesabafo: [Desabafo]?
+
 }
