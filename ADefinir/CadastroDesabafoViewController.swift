@@ -17,9 +17,9 @@ class CadastroDesabafoViewController: UIViewController {
     var desabafo: Desabafo?
     
     @IBAction func criarDesabafo(sender: UIButton!) {
-        self.desabafo = Desabafo()
-        self.desabafo?.titulo = self.tituloLabel.text
-        self.desabafo?.descricao = self.desabafoLabel.text
+        self.desabafo = Desabafo(titulo: self.tituloLabel.text!, descricao: self.desabafoLabel.text)
+//        self.desabafo?.titulo = self.tituloLabel.text
+//        self.desabafo?.descricao = self.desabafoLabel.text
         
         // chamada do método de inserir, que está no "M" (model) do MVC
         

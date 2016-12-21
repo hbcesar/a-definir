@@ -14,10 +14,21 @@ class HomeViewController: UIViewController {
     
     let frontView = UIView()
     let backView = UIView()
+    let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
     
     private var showingBack = false
     
     var listaDesabafos = [Desabafo]()
+    
+//    var currentDesabafo: Desabafo? {
+//        didSet {
+//            
+//            print("Mudei o desabafo!")
+//            
+//            cardTitleLabel?.text = currentDesabafo?.titulo
+//            cardDescriptionLabel?.text = currentDesabafo?.descricao
+//        }
+//    }
     
     // Card Outlets
     @IBOutlet weak var cardImageView: UIImageView!
@@ -32,27 +43,20 @@ class HomeViewController: UIViewController {
         self.mainCard.layer.shadowOpacity = 1.0
         self.mainCard.layer.shadowRadius = 1.0
         
-        // Do any additional setup after loading the view.
-        //let desabafo = listaDesabafos[0]
-        let desabafo = createDesabafoTeste()
+        cardTitleLabel.text = "-"
+        cardDescriptionLabel.text = "-"
         
-        cardTitleLabel.text = desabafo.titulo
-        cardDescriptionLabel.text = desabafo.descricao
+        self.mainCard.addSubview(activityIndicator)
+                activityIndicator.frame = self.mainCard.bounds
+                activityIndicator.startAnimating()
         
+        populate()
         viewAnimation()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func createDesabafoTeste() -> Desabafo {
-        let desabafo = Desabafo()
-        desabafo.titulo = "Eu queria ser rolezeira"
-        desabafo.descricao = "Oi eu queria ser rolezeira pra fecha com os boy mas minha mãe não deixa"
-        
-        return desabafo
     }
     
     func viewAnimation(){
@@ -64,20 +68,56 @@ class HomeViewController: UIViewController {
         mainCard.addGestureRecognizer(swipeGesture)
     }
     
-    func flip() {
-        let toView = showingBack ? frontView : backView
-        let fromView = showingBack ? backView : frontView
-        UIView.transitionFromView(fromView, toView: toView, duration: 1, options: .TransitionCurlUp, completion: nil)
-        
-        //Mudar contents da view
+    func populate(){
         let url = NSURL(string: "http://luizmai.com.br/desabafo.php")
+        typealias JSON = [String:AnyObject]
+        var jsonArray: [JSON]!
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
-            print(NSString(data: data!, encoding: NSUTF8StringEncoding))
+            do {
+                jsonArray = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions()) as? [JSON]
+                
+                var desabafos = [Desabafo]()
+                
+                for json in jsonArray {
+                    let id = json["id"] as? String
+                    let titulo = json["titulo"] as? String
+                    let conteudo = json["conteudo"] as? String
+                    
+                    desabafos.append(Desabafo(id: Int(id!)!, titulo: titulo!,
+                        descricao: conteudo!))
+                }
+            
+                self.activityIndicator.removeFromSuperview()
+                
+                self.listaDesabafos = desabafos
+                
+                self.update()
+                
+            } catch {
+                print(error)
+            }
+            
         }
         
         task.resume()
+    }
+    
+    func update(){
+        let random = Int(arc4random_uniform(UInt32(self.listaDesabafos.count)))
+        let currentDesabafo = self.listaDesabafos[random]
+        self.cardTitleLabel?.text = currentDesabafo.titulo
+        self.cardDescriptionLabel?.text = currentDesabafo.descricao
+    }
+    
+    func flip() {
+        let toView = showingBack ? frontView : backView
+        let fromView = showingBack ? backView : frontView
         
+        self.update()
+        UIView.transitionFromView(fromView, toView: toView, duration: 1, options: .TransitionCurlUp) {
+            (completed) in
+        }
         
         showingBack = !showingBack
     }
