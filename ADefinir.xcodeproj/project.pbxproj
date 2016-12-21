@@ -7,12 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F05B5501E094F96006E2779 /* Comentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05B54C1E094F96006E2779 /* Comentario.swift */; };
-		3F05B5511E094F96006E2779 /* Desabafo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05B54D1E094F96006E2779 /* Desabafo.swift */; };
-		3F05B5521E094F96006E2779 /* DesabafoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05B54E1E094F96006E2779 /* DesabafoDAO.swift */; };
-		3F05B5571E0952BA006E2779 /* CadastroDesabafoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05B5561E0952BA006E2779 /* CadastroDesabafoViewController.swift */; };
 		3F8330FA1E094942004E6824 /* ComentariosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8330F91E094942004E6824 /* ComentariosTableViewController.swift */; };
-		3FF067191E0951C90004D23F /* CadastroDesabafoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF067151E0951C90004D23F /* CadastroDesabafoViewController.swift */; };
+		3FB83F201E0A8F5500227F9A /* CadastroDesabafoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF067151E0951C90004D23F /* CadastroDesabafoViewController.swift */; };
+		3FB83F221E0A8FA500227F9A /* DesabafoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB83F211E0A8FA500227F9A /* DesabafoDetailsViewController.swift */; };
 		3FF0671A1E0951C90004D23F /* Comentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF067161E0951C90004D23F /* Comentario.swift */; };
 		3FF0671B1E0951C90004D23F /* Desabafo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF067171E0951C90004D23F /* Desabafo.swift */; };
 		3FF0671C1E0951C90004D23F /* DesabafoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF067181E0951C90004D23F /* DesabafoDAO.swift */; };
@@ -29,11 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F05B54C1E094F96006E2779 /* Comentario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comentario.swift; sourceTree = "<group>"; };
-		3F05B54D1E094F96006E2779 /* Desabafo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Desabafo.swift; sourceTree = "<group>"; };
-		3F05B54E1E094F96006E2779 /* DesabafoDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesabafoDAO.swift; sourceTree = "<group>"; };
-		3F05B5561E0952BA006E2779 /* CadastroDesabafoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroDesabafoViewController.swift; sourceTree = "<group>"; };
 		3F8330F91E094942004E6824 /* ComentariosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComentariosTableViewController.swift; sourceTree = "<group>"; };
+		3FB83F211E0A8FA500227F9A /* DesabafoDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesabafoDetailsViewController.swift; sourceTree = "<group>"; };
 		3FF067151E0951C90004D23F /* CadastroDesabafoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroDesabafoViewController.swift; sourceTree = "<group>"; };
 		3FF067161E0951C90004D23F /* Comentario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comentario.swift; sourceTree = "<group>"; };
 		3FF067171E0951C90004D23F /* Desabafo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Desabafo.swift; sourceTree = "<group>"; };
@@ -82,6 +76,7 @@
 		3FFF5A7C1E07EE0D002AF99A /* ADefinir */ = {
 			isa = PBXGroup;
 			children = (
+				3FB83F211E0A8FA500227F9A /* DesabafoDetailsViewController.swift */,
 				3FF067151E0951C90004D23F /* CadastroDesabafoViewController.swift */,
 				3FF067161E0951C90004D23F /* Comentario.swift */,
 				3FF067171E0951C90004D23F /* Desabafo.swift */,
@@ -90,9 +85,6 @@
 				3FFF5A7F1E07EE0D002AF99A /* ViewController.swift */,
 				3FFF5A811E07EE0D002AF99A /* Main.storyboard */,
 				3F8330F91E094942004E6824 /* ComentariosTableViewController.swift */,
-				3F05B54C1E094F96006E2779 /* Comentario.swift */,
-				3F05B54D1E094F96006E2779 /* Desabafo.swift */,
-				3F05B54E1E094F96006E2779 /* DesabafoDAO.swift */,
 				3FFF5A941E0802A5002AF99A /* CardView.swift */,
 				3FFF5A971E0804B1002AF99A /* PerfilViewController.swift */,
 				3FFF5A921E07F975002AF99A /* HomeViewController.swift */,
@@ -176,21 +168,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB83F201E0A8F5500227F9A /* CadastroDesabafoViewController.swift in Sources */,
 				3FF0671B1E0951C90004D23F /* Desabafo.swift in Sources */,
 				3FF0671C1E0951C90004D23F /* DesabafoDAO.swift in Sources */,
 				3FFF5A981E0804B1002AF99A /* PerfilViewController.swift in Sources */,
 				3FFF5A801E07EE0D002AF99A /* ViewController.swift in Sources */,
 				3F8330FA1E094942004E6824 /* ComentariosTableViewController.swift in Sources */,
-				3F05B5501E094F96006E2779 /* Comentario.swift in Sources */,
 				3FFF5A861E07EE0D002AF99A /* ADefinir.xcdatamodeld in Sources */,
 				3FF0671A1E0951C90004D23F /* Comentario.swift in Sources */,
 				3FF0671E1E0965F70004D23F /* ComentarioTableViewCell.swift in Sources */,
 				3FFF5A7E1E07EE0D002AF99A /* AppDelegate.swift in Sources */,
-				3F05B5571E0952BA006E2779 /* CadastroDesabafoViewController.swift in Sources */,
-				3F05B5511E094F96006E2779 /* Desabafo.swift in Sources */,
+				3FB83F221E0A8FA500227F9A /* DesabafoDetailsViewController.swift in Sources */,
 				3FFF5A931E07F975002AF99A /* HomeViewController.swift in Sources */,
 				3FFF5A951E0802A5002AF99A /* CardView.swift in Sources */,
-				3FF067191E0951C90004D23F /* CadastroDesabafoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

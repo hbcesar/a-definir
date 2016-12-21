@@ -161,13 +161,13 @@
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="7yf-JK-2QH"/>
-                                                <exclude reference="v9g-K6-XCS"/>
                                                 <exclude reference="IOM-YY-hDk"/>
                                                 <exclude reference="T7r-x5-0in"/>
-                                                <exclude reference="69t-2J-qFI"/>
                                                 <exclude reference="74a-sZ-BVC"/>
                                                 <exclude reference="Vcm-V0-uXl"/>
+                                                <exclude reference="7yf-JK-2QH"/>
+                                                <exclude reference="v9g-K6-XCS"/>
+                                                <exclude reference="69t-2J-qFI"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular" misplaced="YES">
@@ -176,17 +176,17 @@
                                         <variation key="widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="8" y="8" width="344" height="195"/>
                                             <mask key="constraints">
-                                                <include reference="7yf-JK-2QH"/>
-                                                <include reference="v9g-K6-XCS"/>
                                                 <exclude reference="1EY-ne-jqL"/>
                                                 <include reference="IOM-YY-hDk"/>
                                                 <include reference="T7r-x5-0in"/>
                                                 <exclude reference="zcD-52-KLo"/>
-                                                <exclude reference="69t-2J-qFI"/>
                                                 <include reference="74a-sZ-BVC"/>
                                                 <include reference="Vcm-V0-uXl"/>
                                                 <exclude reference="mVw-I0-smJ"/>
                                                 <exclude reference="r5t-rp-T9M"/>
+                                                <include reference="7yf-JK-2QH"/>
+                                                <include reference="v9g-K6-XCS"/>
+                                                <exclude reference="69t-2J-qFI"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
@@ -316,8 +316,8 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="80" height="21"/>
                                                 </variation>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Vai, conta pra gente." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jn6-ws-pxx">
-                                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Vai, conta pra gente." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jn6-ws-pxx">
+                                                <rect key="frame" x="88" y="0.0" width="472" height="128"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="UaB-dw-zLd"/>
@@ -329,7 +329,8 @@
                                                         <exclude reference="UaB-dw-zLd"/>
                                                     </mask>
                                                 </variation>
-                                                <variation key="widthClass=compact">
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="88" y="0.0" width="272" height="120"/>
                                                     <mask key="constraints">
                                                         <include reference="UaB-dw-zLd"/>
                                                     </mask>
@@ -619,20 +620,20 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMY-59-oCW">
                                                 <rect key="frame" x="20" y="228" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="0.0" width="344" height="21"/>
+                                                    <rect key="frame" x="0.0" y="154" width="344" height="21"/>
                                                 </variation>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hSA-t9-Z9G">
                                                 <rect key="frame" x="20" y="134" width="240" height="128"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <variation key="widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="25" width="344" height="203"/>
+                                                    <rect key="frame" x="0.0" y="179" width="344" height="49"/>
                                                 </variation>
                                             </textView>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="67" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o38-8o-CSU">
@@ -647,33 +648,34 @@
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="comentarioIdentifier" rowHeight="67" id="Faw-lp-tl8" customClass="ComentarioTableViewCell" customModule="ADefinir" customModuleProvider="target">
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Faw-lp-tl8" id="Ry1-gI-yjC">
+                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="66.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gNP-bz-XuI">
-                                                                    <rect key="frame" x="-4" y="-4" width="143" height="84"/>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gNP-bz-XuI">
+                                                                    <rect key="frame" x="-4" y="-4" width="142" height="50"/>
                                                                     <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TbQ-QL-TzU">
-                                                                            <rect key="frame" x="20" y="20" width="30" height="30"/>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TbQ-QL-TzU">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                                             <variation key="widthClass=compact" misplaced="YES">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="51"/>
                                                                             </variation>
                                                                         </imageView>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAa-uU-rxm">
-                                                                            <rect key="frame" x="81" y="23" width="42" height="41"/>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cAa-uU-rxm">
+                                                                            <rect key="frame" x="58" y="0.0" width="84" height="50"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhP-Rp-T51">
-                                                                                    <rect key="frame" x="20" y="20" width="42" height="21"/>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhP-Rp-T51">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="42" height="50"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                     <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="270" height="30"/>
                                                                                     </variation>
                                                                                 </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3w9-3e-pMN">
-                                                                                    <rect key="frame" x="26" y="39" width="42" height="21"/>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3w9-3e-pMN">
+                                                                                    <rect key="frame" x="42" y="0.0" width="42" height="50"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                     <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                                                                         <rect key="frame" x="0.0" y="30" width="270" height="21"/>
@@ -681,7 +683,7 @@
                                                                                 </label>
                                                                             </subviews>
                                                                             <variation key="widthClass=compact" axis="vertical" misplaced="YES">
-                                                                                <rect key="frame" x="58" y="0.0" width="270" height="50"/>
+                                                                                <rect key="frame" x="58" y="0.0" width="270" height="51"/>
                                                                             </variation>
                                                                         </stackView>
                                                                     </subviews>
@@ -808,10 +810,10 @@
                                 <exclude reference="iu7-Mo-Bwg"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="V8H-j7-zkE"/>
                                 <exclude reference="3Tb-6H-uiP"/>
                                 <exclude reference="LRt-NM-Bv8"/>
                                 <exclude reference="YPe-kd-GyU"/>
-                                <exclude reference="V8H-j7-zkE"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -819,10 +821,10 @@
                                 <include reference="iu7-Mo-Bwg"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="V8H-j7-zkE"/>
                                 <include reference="3Tb-6H-uiP"/>
                                 <include reference="LRt-NM-Bv8"/>
                                 <include reference="YPe-kd-GyU"/>
-                                <include reference="V8H-j7-zkE"/>
                             </mask>
                         </variation>
                     </view>
